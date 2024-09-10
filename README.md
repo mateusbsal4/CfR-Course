@@ -1,6 +1,6 @@
-# Control for Robotics - Assignments
+# Control for Robotics: from Optimal Control to Reinforcement Learning 
 
-This repository contains the implementation with the corresponding results of the assignments of the practical part Control for Robotics course at TUM. The theoretical part of the course covered the fundamentals of optimal control .
+This repository contains the implementation with the corresponding results of the assignments of the practical part of the Control for Robotics course at TUM. The theoretical part of the course covered optimal control, learning-based control, and reinforcement learning principles from the perspective of robotics applications.
 
 ## Assignment 1 - Optimal Control and Dynamic Programming
 
@@ -21,10 +21,10 @@ For a desired reference of y = -5 and zero heading, the evolution of the states 
 
 
 ### Problem 2
-In this problem, the task was to design controllers that allow a quadrotor to reliably reach a predefined goal. The state
+In this problem, the task was to design controllers that allow a quadrotor to reliably reach a predefined goal and/or pass through predefined via-points. The state
 state x of this robot is defined by the position of its center of mass (px , py , pz ) and the body orientations
 (ϕ, θ, ψ) (roll, pitch, yaw), and their derivatives.
-state and/or pass through predefined via-points. More specifically, both the LQR and ILQC controllers were implemented and their performances compared. 
+Both LQR and ILQC controllers were implemented and their performances compared. 
 For an initial state of [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] and goal state of [10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], the simulation results for the LQR and ILQC are shown below:
 
 ![plots_x_goal_given](https://github.com/user-attachments/assets/46193c7a-9b08-4bf2-ba23-a397ed6b8853)
