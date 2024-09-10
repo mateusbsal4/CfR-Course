@@ -31,4 +31,19 @@ For an initial state of [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] and goal state of [
 
 ![ilqc_controller](https://github.com/user-attachments/assets/e2cbcf7d-051d-4737-a3b9-a7a0e0a11c3d)
 
+## Assignment 3 - Model Predictive Control and System Identification
 
+### Problem 1  
+In this assignment, the task was to implement model predictive control (MPC) to solve a standard benchmark
+problem in control and reinforcement learning: driving an under-powered car to the top of a hill. The dynamics of the car was given as 
+v_{k+1} = v_{k} + 0.001a_{k} - 0.0025 * cos(3p_{k})
+p_{k+1} = p_{k} + v_{k+1}
+with position p and velocity v
+The implementation produced the following simulation outputs for a goal stat of [v, p] = [0, 0.5]:
+
+![Trajectories3_1](https://github.com/user-attachments/assets/09e2541d-21e1-4eb4-9d79-b5a93a671ceb)
+
+### Problem 2
+Assuming that the dynamics of mountain car has changed to v_{k+1} = v_{k} + \alpha a_{k} - \beta * cos(3p_{k}), with unknown parameters \alpha and \beta, the task was to estimate the optimal parameters from an input output dataset using Bayesian Linear Regression. Results are shown below
+
+![Parameter Estimation](https://github.com/user-attachments/assets/0388db69-5ffb-42e7-b8d0-5992d53d22b9)
