@@ -1,0 +1,34 @@
+# Control for Robotics - Assignments
+
+This repository contains the implementation with the corresponding results of the assignments of the practical part Control for Robotics course at TUM. The theoretical part of the course covered the fundamentals of optimal control .
+
+## Assignment 1 - Optimal Control and Dynamic Programming
+
+### Problem 1
+In this task, a robot vacuum cleaner navigates a grid world to reach its charging station while removing dirt and avoiding obstacles. The goal is to find the optimal policy for moving through the grid with varying cell costs. The solution involves using value iteration to calculate the cost-to-go and the optimal control sequence for the robot.
+
+### Problem 2
+This problem involves stabilizing an inverted pendulum at the upright position using approximate dynamic programming. The task requires linearizing the nonlinear system, discretizing the dynamics, and implementing a discrete-time controller that minimizes a quadratic cost function to stabilize the pendulum.
+
+## Assignment 2 - Model-Based Iterative Linear Quadratic Control
+
+### Problem 1 
+This problem involves designing an LQR and ILQC controller which drives the mobile robot shown below in a straight line  
+![Screenshot from 2024-09-10 10-32-28](https://github.com/user-attachments/assets/c2458f74-54ba-4683-8528-72de3892b55b)
+
+For a desired reference of y = -5 and zero heading, the evolution of the states is shown below
+![states_0_pi](https://github.com/user-attachments/assets/fe2a84c1-c8a3-4000-a85a-f7824fb923d6)
+
+
+### Problem 2
+In this problem, the task was to design controllers that allow a quadrotor to reliably reach a predefined goal. The state
+state x of this robot is defined by the position of its center of mass (px , py , pz ) and the body orientations
+(ϕ, θ, ψ) (roll, pitch, yaw), and their derivatives.
+state and/or pass through predefined via-points. More specifically, both the LQR and ILQC controllers were implemented and their performances compared. 
+For an initial state of [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] and goal state of [10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], the simulation results for the LQR and ILQC are shown below:
+
+![plots_x_goal_given](https://github.com/user-attachments/assets/46193c7a-9b08-4bf2-ba23-a397ed6b8853)
+
+![ilqc_controller](https://github.com/user-attachments/assets/e2cbcf7d-051d-4737-a3b9-a7a0e0a11c3d)
+
+
